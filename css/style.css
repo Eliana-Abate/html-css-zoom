@@ -11,10 +11,11 @@ body {
     font-family: sans-serif;
 }
 
-
+/******************* HEADER ******************/
 header {
     background-color: black;
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     width: 100%;
     height: 70px;
@@ -29,8 +30,11 @@ header {
     margin-bottom: 20px;
 }
 
+
+
+/******************* MAIN ******************/
 #users-online {
-    height: calc(100vh - 160px);
+    height: calc(100vh - 150px);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -43,19 +47,66 @@ header {
     margin: 5px;
 }
 
+.single-user img {
+    height: 100%;
+    width: max-content;
+}
+
 .user-bg {
     background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
     padding: 5px;
     position: absolute;
     bottom: 0;
     left: 0;   
 }
 
+
+/******************* FOOTER ******************/
 footer {
     width: 100%;
     height: 80px;
-    background-color: blanchedalmond;
+    background-color: #222222;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+footer .tools-area:first-child {
+    margin-left: 13px;
+}
+
+.tools-area {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;   
+}
+
+.single-tool {
+    margin-right: 25px;
+    text-align: center;
+}
+
+footer .tools-area p {
+    font-size: 15px;
+}
+
+footer .tools-area .fas.fa-angle-up {
+    font-size: 18px;
+}
+
+.fa-share-square {
+    color: #4ac700;
+}
+
+#exit-area {
+    background-color: #4a4a4a;
+    color: red;
+    line-height: 80px;
+    text-align: center;
+    padding: 0px 20px; 
 }
 
 
