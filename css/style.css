@@ -43,14 +43,12 @@ header {
 }
 
 .single-user {
+    width: 246px;
+    height: 146px;
     position: relative;
     margin: 5px;
 }
 
-.single-user img {
-    height: 100%;
-    width: max-content;
-}
 
 .user-bg {
     background-color: rgba(0, 0, 0, 0.5);
