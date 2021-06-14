@@ -10,9 +10,15 @@ body {
     font-family: sans-serif;
 }
 
-#main-header {
+
+header {
+    background-color: black;
     display: flex;
     justify-content: flex-end;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 .header-btn {
@@ -24,7 +30,7 @@ body {
     margin-bottom: 20px;
 }
 
-.users-online {
+#users-online {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
